@@ -5,7 +5,8 @@
   "main": "src/App.jsx",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "CI=false react-scripts build",
+    "postinstall": "chmod +x node_modules/.bin/react-scripts"
   },
   "dependencies": {
     "firebase": "^10.12.3",
